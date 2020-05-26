@@ -1,48 +1,46 @@
 {
-  "name": "enesyurtlu/ModMan",
-  "description": "A Module Management for Laravel 6.x",
-  "license": "MIT",
-  "keywords": [
-    "modman"
-  ],
-  "type": "library",
-  "authors": [
-    {
-      "name": "",
-      "email": ""
+    "name": "enesyurtlu/modman",
+    "description": "A Module Management for Laravel 6.x",
+    "license": "MIT",
+    "keywords": [
+        "modman"
+    ],
+    "type": "library",
+    "authors": [{
+        "name": "",
+        "email": ""
+    }],
+    "require": {
+        "php": ">=7.2",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "enesyurtlu\\ModMan\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "enesyurtlu\\ModMan\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "phpunit": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "enesyurtlu\\ModMan\\ModManServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
     }
-  ],
-  "require": {
-    "php": ">=7.2",
-    "illuminate/support": "^6.0"
-  },
-  "require-dev": {
-    "orchestra/testbench": "^4.0",
-    "phpunit/phpunit": "^8.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "enesyurtlu\\ModMan\\": "src"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "enesyurtlu\\ModMan\\Tests\\": "tests"
-    }
-  },
-  "scripts": {
-    "phpunit": "phpunit"
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "enesyurtlu\\ModMan\\ModManServiceProvider"
-      ]
-    }
-  },
-  "config": {
-    "preferred-install": "dist",
-    "sort-packages": true,
-    "optimize-autoloader": true
-  }
 }
