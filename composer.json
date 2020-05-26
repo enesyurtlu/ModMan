@@ -7,8 +7,8 @@
     ],
     "type": "library",
     "authors": [{
-        "name": "",
-        "email": ""
+        "name": "Enes Yurtlu",
+        "email": "meyurtlu@gmail.com"
     }],
     "require": {
         "php": ">=7.2",
