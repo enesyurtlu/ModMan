@@ -1,6 +1,6 @@
 <?php
 
-namespace enesyurtlu\ModMan\Facades;
+namespace enesyurtlu\modman\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

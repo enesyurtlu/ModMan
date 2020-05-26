@@ -1,6 +1,6 @@
 <?php
 
-namespace enesyurtlu\ModMan;
+namespace enesyurtlu\modman;
 
 use Illuminate\Support\ServiceProvider;
 use Nwidart\Modules\Commands\CommandMakeCommand;
