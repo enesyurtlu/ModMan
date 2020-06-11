@@ -20,12 +20,12 @@
     },
     "autoload": {
         "psr-4": {
-            "enesyurtlu\\ModMan\\": "src"
+            "enesyurtlu\\modman\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "enesyurtlu\\ModMan\\Tests\\": "tests"
+            "enesyurtlu\\modman\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -34,7 +34,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "enesyurtlu\\ModMan\\ModManServiceProvider"
+                "enesyurtlu\\modman\\ModManServiceProvider"
             ]
         }
     },
