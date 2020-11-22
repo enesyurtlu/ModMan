@@ -1,6 +1,6 @@
 {
     "name": "enesyurtlu/modman",
-    "description": "A Module Management for Laravel 6.x",
+    "description": "A Module Management for Laravel 8.x",
     "license": "MIT",
     "keywords": [
         "modman"
