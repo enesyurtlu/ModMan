@@ -2,7 +2,6 @@
 
 namespace enesyurtlu\modman;
 
-
 use Illuminate\Config\Repository;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Routing\Controller;
@@ -24,13 +23,14 @@ class ModMan extends Controller
     {
         $this->app = $app;
         $this->modules_dir = config("modman.modules_dir");
-        $this->modules = preg_grep('/^([^.])/', array_diff(scandir($this->modules_dir), array('..', '.', 'core')));
+        $this->modules = preg_grep('/^([^.])/', array_diff(scandir(base_path() ."/".$this->modules_dir), array('..', '.', 'core')));
+
     }
 
     public function findModules()
     {
         foreach ($this->modules as $module) {
-            $this->app->register($this->modules_dir . "\\" . $module . "\\" . ucfirst($module) . "ServiceProvider");
+            $this->app->register($this->modules_dir . "\\" . $module . "\\" . str_replace("_", '', ucwords(ucfirst($module), "_")) . "ServiceProvider");
         }
     }
 
